@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/infoFragment">
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.hiberus.magicthegathering.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.hiberus.magicthegathering.CardsFragment"
+        android:label="fragment_cards"
+        tools:layout="@layout/fragment_cards" >
+        <action
+            android:id="@+id/action_cardsFragment_to_magicCardFragment"
+            app:destination="@id/magicCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/magicCardFragment"
+        android:name="com.hiberus.magicthegathering.MagicCardFragment"
+        android:label="fragment_magic_card"
+        tools:layout="@layout/fragment_magic_card" />
+</navigation>
