@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.hiberus.magicthegathering.InfoFragment"
+        android:name="com.hiberus.magicthegathering.ui.fragments.info.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
         <action
@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/cardsFragment"
-        android:name="com.hiberus.magicthegathering.CardsFragment"
+        android:name="com.hiberus.magicthegathering.ui.magiccardlist.MagicCardsListFragment"
         android:label="fragment_cards"
-        tools:layout="@layout/fragment_cards" >
+        tools:layout="@layout/fragment_magic_cards_list" >
         <action
             android:id="@+id/action_cardsFragment_to_magicCardFragment"
             app:destination="@id/magicCardFragment" />

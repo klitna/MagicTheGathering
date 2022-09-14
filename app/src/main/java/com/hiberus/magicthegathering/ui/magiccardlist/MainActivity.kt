@@ -1,7 +1,8 @@
-package com.hiberus.magicthegathering
+package com.hiberus.magicthegathering.ui.magiccardlist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hiberus.magicthegathering.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
